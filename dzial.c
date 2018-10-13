@@ -19,10 +19,25 @@ int main() {
 
 
     switch (zn){
-        case '1' : wynik = x + y; break;
-        case '2' : wynik = x - y; break;  // jesli damy break to nie bedzie dalej prszeszukiwac case tylko wyjdzie z programu
-        case '3' : wynik = x * y; break;                 // jesli nie damy break to przejdzie do nastepnego case
-        case '4' : wynik = x / y; break;
+        case '1' :
+            wynik = x + y;
+        break;
+        case '2' :
+            wynik = x - y;
+            break;  // jesli damy break to nie bedzie dalej prszeszukiwac case tylko wyjdzie z programu
+        case '3' :
+            wynik = x * y;
+            break;                 // jesli nie damy break to przejdzie do nastepnego case
+        case '4' :
+            if (x==0 || y==0)
+            {printf(" Nie można dzielić przez zero!!!\n");}
+            else{
+                wynik = x / y;
+            }
+
+
+
+            break;
 
         default: printf("Podałęś błędne dane!!!");
     }
